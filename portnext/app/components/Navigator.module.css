@@ -1,0 +1,47 @@
+.navbar {
+    max-width: 100%;
+    position: sticky;
+    color: black;
+    top: 0;
+    font-size: 1.1rem;
+    background: linear-gradient(
+      to left,
+      rgba(14, 50, 89, 0.9),
+      rgba(14, 50, 89, 0.8)
+    );
+    z-index: 3;
+    height: 80px;
+    max-height: auto;
+    transition: all 0.3s;
+  }
+  .navbar.active {
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+  }
+  
+  
+  .skillsbar {
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .skillsbar:hover {
+    border-radius: 5px;
+    color: white;
+    border-bottom: 2px solid #0c3665;
+  }
+  
+  .skillsbar.nav-link.active {
+    color: white;
+  }
+
+  @media only screen and (max-width: 992px) {
+    #basic-navbar-nav{
+      background-color: rgba(14, 50, 89,0.5);
+    }
+    .skillsbar {
+      color: #ffffff;
+    }
+  }

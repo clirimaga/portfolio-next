@@ -1,0 +1,25 @@
+/* skill */
+#techskills {
+    background: linear-gradient(to right,  #f3f5f7,#e5ebf1);
+  }
+  #dark #techskills {
+    background: linear-gradient(to right ,#11161c,#1d2530);
+  }
+  .skill {
+    max-width: 5rem;
+    transition: 0.5s;
+  }
+  
+  .skilltitle {
+    color: #041529;
+  }
+  
+  .skill:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  #dark .skilltitle {
+    color: white;
+  }
+  

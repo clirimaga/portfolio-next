@@ -1,0 +1,46 @@
+.maincolor {
+  color: #0c55a7;
+}
+.links {
+  width: 5rem;
+  background-color: #0c55a7;
+}
+.links:hover {
+  background-color: #0c3665;
+}
+#dark .mycard {
+  background-color: #0e3259;
+}
+.info:hover {
+  cursor: pointer;
+}
+
+.aboutp {
+    width: 75%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  
+  .aboutpshow {
+    width: 100%;
+    height: auto;
+    max-height: 100rem;
+    transition: all 0.5s;
+  }
+  .wavinghand {
+    width: 10rem;
+    animation: wave 2.5s infinite linear;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(30deg);
+    }
+  }

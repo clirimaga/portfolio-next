@@ -1,0 +1,10 @@
+body,
+main {
+  margin: 0;
+}
+
+#dark {
+  margin:0;
+  background-color: #11161c;
+  color: white;
+}

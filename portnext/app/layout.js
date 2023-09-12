@@ -4,7 +4,7 @@ import { Rubik } from 'next/font/google'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import 'bootstrap/dist/css/bootstrap.css'
-import './i18next';
+// import './i18next';
 import Navigator from './components/Navigator'
 import { useSelector } from 'react-redux'
 const rubik = Rubik({ subsets: ['latin'] })

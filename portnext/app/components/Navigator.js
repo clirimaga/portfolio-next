@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,14 +10,23 @@ function Navigator() {
   const [navbar, setNavbar] = useState(false);
   //   const { t } = useTranslation();
 
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", changeBackground);
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 80) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeBackground);
+
+useEffect(()=>{
+ const changeBackground = () => {  if(window.scrollY >=80) {
+    setNavbar(true)
+  } else {setNavbar(false)}
+}
+window.addEventListener("scroll", changeBackground);
+},[])
+
   return (
     <nav>
       <Navbar
@@ -29,20 +38,20 @@ function Navigator() {
         expand="lg"
       >
         <Container>
-          <Navbar.Brand className={`${classes.skillsbar} ps-2 pe-2`}>
+          <Nav.Link className={`${classes.skillsbar} ps-2 pe-2`}>
             Ç.S
-          </Navbar.Brand>
+          </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <Navbar.Collapse
-            id="basic-navbar-nav"
-            className="justify-content-end"
+            id={classes["basicNavbarNav"]}
+            className={`${classes.basicNavbarNav} justify-content-end`}
           >
             <Nav>
               <span>
                 <Nav.Link href="#techskills" className={classes.skillsbar}>
                   {/* {t("Navbar.1")} */}
                   Tech Skills
-                </Nav.Link>
+                </Nav.Link >
               </span>
               <span>
                 <Nav.Link href="#projects" className={classes.skillsbar}>

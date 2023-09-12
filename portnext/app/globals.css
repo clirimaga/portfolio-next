@@ -3,8 +3,10 @@ main {
   margin: 0;
 }
 
-#dark {
+.dark {
   margin:0;
   background-color: #11161c;
   color: white;
 }
+
+

@@ -1,5 +1,5 @@
-"use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import "./TechSkills.css";
 import Spinner from "react-bootstrap/Spinner";
 

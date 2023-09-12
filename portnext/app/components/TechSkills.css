@@ -2,7 +2,7 @@
 #techskills {
     background: linear-gradient(to right,  #f3f5f7,#e5ebf1);
   }
-  #dark #techskills {
+  .dark #techskills {
     background: linear-gradient(to right ,#11161c,#1d2530);
   }
   .skill {
@@ -19,7 +19,7 @@
     transform: scale(1.2);
   }
   
-  #dark .skilltitle {
+  .dark .skilltitle {
     color: white;
   }
   

@@ -1,0 +1,51 @@
+
+.sidebar {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background: rgba(14, 50, 89, 0.5);
+  border-radius: 3rem;
+  bottom: 50%;
+  gap: 0.8rem;
+  left: 95%;
+  min-height: 100px;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: -webkit-max-content;
+  width: max-content;
+  z-index: 2;
+}
+@media only screen and (max-width: 992px) {
+  #basic-navbar-nav{
+    background-color: rgba(14, 50, 89,0.5);
+  }
+  .skillsbar {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .sidebar {
+  top:50%;
+  left: 85%;
+  }
+
+  .scrollButton {
+    bottom: 15%;
+    left: 85%;
+  }
+
+ }
+.lightdarkicon {
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+}
+.lightdarkicon:hover {
+  cursor: pointer;
+}
+.langselect {
+  background-color: transparent;
+  color: white;
+  border: none;
+}

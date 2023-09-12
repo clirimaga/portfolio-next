@@ -4,11 +4,11 @@ import classes from './About.module.css'
 import '../globals.css'
 // import AOS from "aos";
 // import "aos/dist/aos.css";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 export default function About() {
 //   AOS.init();
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div

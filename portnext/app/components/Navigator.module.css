@@ -19,13 +19,15 @@
     backdrop-filter: blur(50px);
   }
   
-  
   .skillsbar {
     color: white;
     border-radius: 5px;
     text-decoration: none;
     padding: 3px;
     border-bottom: 2px solid transparent;
+  }
+  .dark .skillsbar{
+    color: #0c3665
   }
   .skillsbar:hover {
     border-radius: 5px;
@@ -38,7 +40,7 @@
   }
 
   @media only screen and (max-width: 992px) {
-    #basic-navbar-nav{
+    #basicNavbarNav{
       background-color: rgba(14, 50, 89,0.5);
     }
     .skillsbar {

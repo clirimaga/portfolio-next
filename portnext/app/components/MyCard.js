@@ -1,10 +1,11 @@
+'use client'
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import classes from "./MyCard.module.css";
 import { Suspense } from "react";
-import Loading from "../loading";
+// import Loading from "../loadinggggg";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 function MyCard() {
@@ -12,7 +13,7 @@ function MyCard() {
   return (
     <div className="col-auto" data-aos="zoom-out-right">
       <Card className={classes.mycard}>
-        <Suspense fallback={<Loading />}>
+        {/* <Suspense fallback={<Loading />}> */}
         <Card.Img
           variant="top"
           src={
@@ -21,7 +22,7 @@ function MyCard() {
             alt="clirim"
             className={classes.cardImg}
             />
-            </Suspense>
+            {/* </Suspense> */}
         <Card.Body className="d-flex flex-col justify-content-around">
           <a href="https://github.com/clirimaga" target="_blank">
             <Button className={classes.links} title="Github">
